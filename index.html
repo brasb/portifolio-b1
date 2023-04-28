@@ -1,18 +1,28 @@
+<!--
+    TODO: 
+        * spacing das logos;
+        * ver tamanho de fontes;
+        * imagem animada(?);
+        * botão de voltar.
+-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Portifólio B1</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <head>
         <nav id="menu_bar">
             <ul>
-                <li><a href="">Início</a></li>
-                <li><a href="">Contato</a></li>
-                <li><a href="">Portifólio</a></li>
-                <li><a href="">Serviços</a></li>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#contacts">Contato</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#services">Serviços</a></li>
             </ul>
         </nav>
     </head>
@@ -25,24 +35,30 @@
                 </p>
             </div>
             <div id="container_home_img">
+                <img src="https://images.pexels.com/photos/1981443/pexels-photo-1981443.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="Ilustração de um homem usando um computador." class="illustration">
             </div>
         </section>
         <section id="contacts">
             <div id="container_contacts_text">
                 <h1>Contato</h1>
-                <p>Entre em contato usando os links ao lado.</p>
+                <p>Entre em contato comigo usando os links ao lado.</p>
             </div>
             <div id="container_contacts_links">
-                <a href=""><img src="" alt="Instagram"></a>
-                <a href=""><img src="" alt="LinkedIn"></a>
-                <a href=""><img src="" alt="GitHub"></a>
-                <a href=""><img src="" alt="StackOverflow"></a>
+                <div id="social_icons_row_1">
+                    <a href=""><img src="instagram_logo.png" alt="Ir para o meu perfil no serviço Instagram™."></a>
+                    <a href=""><img src="linked_in_logo.png" alt="Ir para o meu perfil no serviço LinkedIn™."></a>
+                </div>
+                <div id="social_icons_row_2">
+                    <a href=""><img src="github_mark.png" alt="Ir para o meu perfil no serviço GitHub™."></a>
+                </div>
             </div>
         </section>
         <section id="portfolio">
-            <h1>Portifólio</h1>
-            <p>
-                Minhas habilidades:
+            <div id="container_portfolio">
+                <h1>Portfólio</h1>
+                <p>
+                    Minhas habilidades:
                 <ul>
                     <li>Inglês avançado;</li>
                     <li>C#;</li>
@@ -52,11 +68,18 @@
                     <li>Git;</li>
                     <li>HTML e CSS.</li>
                 </ul>
-            </p>
+                </p>
+            </div>
+            <div id="container_portfolio_img">
+                <img src="https://images.pexels.com/photos/2061168/pexels-photo-2061168.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="Ilustração mostrando códigos." class="illustration">
+            </div>
         </section>
         <section id="services">
-            <h1>Serviços</h1>
-            <p>Posso criar programas, sites e pequenos jogos.</p>
+            <div id="services_text_container">
+                <h1>Serviços</h1>
+                <p>Posso criar programas, sites e pequenos jogos.</p>                
+            </div>
         </section>
     </main>
 </body>
