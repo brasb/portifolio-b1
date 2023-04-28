@@ -9,6 +9,20 @@
         url('font.woff') format('woff');
 }
 
+@keyframes floating {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-1px, -4px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
 body {
     background-color: #c5dbd4;
     color: #221e31;
@@ -36,14 +50,12 @@ section {
     border-radius: 15px;
     color: #778e9822;
     box-shadow: 4px 4px;
-}
-
-#menu_bar {
-    color: #778e9822;
-    box-shadow: 0px 4px;
+    margin-top: 10vh;
+    animation: floating 3s ease-in-out infinite;
 }
 
 #menu_bar ul {
+    position: fixed;
     padding: 0px;
     width: 100%;
     display: flex;
@@ -52,6 +64,8 @@ section {
     align-items: center;
     background-color: #778e98;
     border-radius: 2px;
+    color: #778e9822;
+    box-shadow: 0px 4px;
 }
 
 #menu_bar ul li {
@@ -80,12 +94,15 @@ section {
 }
 
 #container_contacts_links {
+    margin-top: 10vh;
     text-align: center;
-    padding-left: 19vw;
+    margin-left: 17vw;
 }
 
 #container_contacts_links a img {
     width: 64px;
+    margin-right: 20px;
+    margin-bottom: 15px;
 }
 
 #container_portfolio ul {
@@ -96,4 +113,9 @@ section {
 #container_portfolio_img img {
     width: 500px;
     margin-left: 32vw;
+}
+
+#service_img_container img {
+    width: 500px;
+    margin-left: 5vw;
 }
